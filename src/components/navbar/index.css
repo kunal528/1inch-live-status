@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+  padding-left: 71px;
+  padding-right: 100px;
+  background-color: #edf3ff;
+  height: 172px;
+  box-shadow: inset;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #edf3ff;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: #27A1FF;
+  border: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+
+.headerText {
+  flex: 3;
+  font-size: 55px;
+  font-weight: bold;
+  /* align-self: start; */
+  text-align: start;
+  color: black;
+}
