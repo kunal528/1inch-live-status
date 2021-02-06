@@ -2,7 +2,7 @@ import "./index.css";
 import PropTypes from "prop-types";
 import TableRow from "./TableRow";
 
-const Table = ({ swaps }) => {
+const Table = ({ swaps,state }) => {
   return (
     <div className="table-wrapper">
       <div className="table-scroll">
@@ -21,7 +21,7 @@ const Table = ({ swaps }) => {
           </colgroup>
           <tbody>
             {swaps.map((swap) => (
-              <TableRow swap={swap} />
+              <TableRow swap={swap} state={state} />
             ))}
           </tbody>
         </table>

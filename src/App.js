@@ -13,7 +13,7 @@ function App() {
     const fetchData = async () => {
       let { error, data } = await supabaseClient
         .from("latest_swaps")
-        .select();
+        .select().order('block',{ascending:false}).limit(10);
       if (error) {
         console.log(error.message);
         return;
@@ -34,8 +34,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-
-      {loading ? "loading" : <Body swaps={data} />}
+      {loading ? "loading" : <Body swaps={data} state={ state}/>}
     </div>
   );
 }

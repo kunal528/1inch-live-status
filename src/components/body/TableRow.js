@@ -2,10 +2,16 @@ import React from "react";
 import SwapIcons from "./SwapIcons";
 import TwitterIcons from "./TwitterIcons";
 import Image from "./Image";
-const TableRow = ({ swap }) => {
+const TableRow = ({ swap, state }) => {
   return (
-    <tr style={{ backgroundColor: "white" }}>
-      <td>{swap.tx_id.substring(0, 14)}...</td>
+    <tr
+      style={{ backgroundColor: "white" }}
+      className={state == null ? `` : `table-row`}
+    >
+      <td  style={{ content: `${swap.tx_id}` }}>
+        {swap.tx_id.substring(0, 14)}...
+      </td>
+
       <td>{swap.block}</td>
       <td>
         <Image
