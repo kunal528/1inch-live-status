@@ -5,7 +5,7 @@ import "./index.css";
 const TwitterIcons = ({ onClick }) => {
   return (
       <div className="twitterButton" onClick={onClick}>
-        <IoLogoTwitter color="#27a1ff" size={39} />
+        <IoLogoTwitter color="#27a1ff" size='3vh' />
       </div>
   );
 };

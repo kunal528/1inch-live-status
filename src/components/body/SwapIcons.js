@@ -1,13 +1,13 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 const SwapIcons = ({ isCircle }) => {
   return (
-    <div>
+    <div style={{ width: "3vh", height: "3vh" }}>
       {isCircle ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
+          width="3vh"
+          height="3vh"
           viewBox="0 0 35 35"
         >
           <path
@@ -21,8 +21,8 @@ const SwapIcons = ({ isCircle }) => {
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="31.5"
-          height="24.469"
+          width="3vh"
+          height="2.5vh"
           viewBox="0 0 31.5 24.469"
         >
           <path
@@ -39,11 +39,11 @@ const SwapIcons = ({ isCircle }) => {
 };
 
 SwapIcons.defaultProps = {
-    isCircle: true
-}
+  isCircle: true,
+};
 
 SwapIcons.propTypes = {
-    isCircle: PropTypes.bool
-}
+  isCircle: PropTypes.bool,
+};
 
 export default SwapIcons;

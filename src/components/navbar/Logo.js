@@ -5,8 +5,7 @@ const Logo = ({ imageUrl, logoText }) => {
     <>
       <img
         src={imageUrl}
-        height={172}
-        width={172}
+        className='img'
         alt="1inch"
       />
       <p className="headerText">{logoText}</p>

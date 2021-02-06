@@ -1,48 +1,21 @@
 .body {
-  padding: 0px 90px;
-}
-/* 
-table {
-  border-collapse: separate;
-  width: 100%;
-  border-radius: 21px 21px 0px 0px;
-  border-style: hidden;
-  box-shadow: 0 0 5px #d5d8de;
-  border-spacing: 0px;
-  background-color: #443c61;
-  margin-top: 26px;
-  display: table;
-} */
-
-td,
-th {
-  padding: 0.5rem;
-  text-align: center;
-  align-items: center;
-  display: table-cell;
+  padding: 0vh 8.33vh;
 }
 
-td {
-  font-size: 24px;
-  text-overflow: ellipsis;
-  height: 100px;
-  display: table-cell;
-  color: #b3bfe2;
-}
 
 .table-wrapper {
   position: relative;
 }
 .table-scroll {
-  height: 810px;
+  height: 69vh;
   overflow: auto;
 }
 .table-wrapper table {
   width: 100%;
   border-collapse: separate;
-  margin: 0px 0px 0px 10px;
+  margin: 0vh 0vh 0vh 0.92vh;
   border-style: hidden;
-  border-spacing: 0px 20px;
+  border-spacing: 0vh 1.84vh;
 }
 
 @keyframes add {
@@ -56,56 +29,56 @@ td {
   }
 }
 
-
-tr:first-child {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    max-height: 0vh;
   }
-
   to {
-    opacity: 1;
+    max-height: 9.2vh;
   }
 }
-tr:hover {
-  filter: drop-shadow(0 0 20px #d5d8de);
-  /* box-shadow: 0px 0px 30px #d5d8de; */
-}
 
-.table-row:first{
-  opacity: 0;
+
+.table-row:first-child {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.table-row{
-
+.table-row {
+  display: flex;
+  max-height: 9.2vh;
+  height: auto;
+  margin: 1.84vh;
+  font-size: 1.66vh;
+  text-overflow: ellipsis;
+  color: #b3bfe2;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .table-row:hover {
-  filter: drop-shadow(0 0 20px #d5d8de);
+  filter: drop-shadow(0 0 1.84vh #d5d8de);
+}
+
+img {
+  height: 8vh;
+  width: 8vh;
 }
 
 .table-header {
   display: inline-flex;
   width: 100%;
   color: white;
+  height: 9vh;
   align-items: center;
   vertical-align: middle;
-  height: 90px;
-  font-size: 30px;
+  font-size: 2vh;
   font-weight: 600;
   background-color: #443c61;
-  border-radius: 21px 21px 0px 0px;
-  margin-top: 26px;
+  border-radius: 1.84vh 1.84vh 0vh 0vh;
+  margin-top: 1.84vh;
 }
 
 @keyframes circle {
@@ -124,9 +97,9 @@ tr:hover {
 }
 
 .liveIcon {
-  margin: 10px 10px 10px 16px;
-  width: 23px;
-  height: 23px;
+  margin: 0.92vh 0.92vh 0.92vh 0.95vh;
+  width: 2.5vh;
+  height: 2.5vh;
   border-radius: 50%;
   background-color: white;
   animation: circle 2s infinite;
@@ -135,40 +108,34 @@ tr:hover {
 .LiveStatus {
   display: flex;
   align-items: center;
-  height: 47px;
-  width: 130px;
+  height: 4vh;
+  width: 12vh;
   background-color: #ff0707;
   box-shadow: inset;
-  border-radius: 24px;
+  border-radius: 1.89vh;
 }
 
 .row {
   display: flex;
   align-items: center;
-  box-shadow: inset;
-  margin-top: 15px;
+  margin-top: 1vh;
+  height: 5vh;
 }
 
 .recentTransactionText {
-  font-size: 36px;
+  font-size: 2.5vh;
   font-weight: 600;
   color: #443c61;
   margin: 0px;
 }
 
 .twitterButton {
-  height: 60px;
+  height: 5.55vh;
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 60px;
+  width: 5.55vh;
   border-radius: 50%;
-  box-shadow: 0px 0px 5px #d5d8de;
+  box-shadow: 0px 0px 0.46vh #d5d8de;
 }
 
-th {
-  color: white;
-  height: 90px;
-  font-size: 30px;
-  font-weight: 600;
-}

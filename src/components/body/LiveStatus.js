@@ -11,7 +11,7 @@ const LiveStatus = () => {
         Recent Transactions{" "}
       </p>
       <SwapIcons isCircle={false} />
-      <div style={{ flex: 4 }}></div>
+      <div style={{ flex: 4 ,}}></div>
       <Live />
     </div>
   );
