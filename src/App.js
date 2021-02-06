@@ -18,19 +18,19 @@ function App() {
         console.log(error.message);
         return;
       }
-      setData(data.sort((a, b) => b.block - a.block));
-      console.log(state);
+      setData(data)
     };
     fetchData();
     subscription = supabaseClient
       .from("latest_swaps")
       .on("INSERT", (v) => {
-        setState(v.new.tx_id);
-        console.log(v);
+        console.log(data)
+        console.log(v.new)
+        setData((d)=>[v.new,...d])
       })
       .subscribe();
     setLoading(false);
-  }, [state]);
+  }, []);
   return (
     <div className="App">
       <NavBar />

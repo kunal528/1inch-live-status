@@ -6,7 +6,7 @@ const Table = ({ swaps,state }) => {
   return (
     <div className="table-wrapper">
       <div className="table-scroll">
-        <table>
+        <table key = {swaps.lenth>0?  swaps[0].tx_id:'table'}>
           <colgroup>
             <col style={{ width: "11%" }}></col>
             <col style={{ width: "10%" }}></col>

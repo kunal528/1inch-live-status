@@ -16,6 +16,7 @@ const TableRow = ({ swap, state }) => {
       <td>
         <Image
           imgUrl={`https://tokens.1inch.exchange/${swap.fromToken.toLowerCase()}.png`}
+          key = {swap.tx_id+'1'}
         />
       </td>
       <td>
@@ -24,6 +25,7 @@ const TableRow = ({ swap, state }) => {
       <td>
         <Image
           imgUrl={`https://tokens.1inch.exchange/${swap.toToken.toLowerCase()}.png`}
+          key = {swap.tx_id+'2'}
         />
       </td>
       <td>{swap.amountIn}</td>
