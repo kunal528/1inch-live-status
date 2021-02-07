@@ -33,7 +33,17 @@ const TableRow = ({ swap, state }) => {
         />
       </div>
       <div style={{ width: "14%" }}>{swap.amountIn}</div>
-      <div style={{ width: "14%" }}>{swap.amountOut}<br/> on <img src={imgUrl} style={{ width:'10px' , height:'10px' }} alt="Error" /> { swap.dexName}</div>
+      <div style={{ width: "14%" }}>
+        {swap.amountOut}
+        <br /> on{" "}
+        <img
+          key={swap.tx_id + "3"}
+          src={imgUrl}
+          style={{ width: "2vh", height: "2vh" }}
+          alt="Error"
+        />{" "}
+        {swap.dexName}
+      </div>
       <div style={{ width: "14%" }}>{swap.with1inch}</div>
       <div style={{ width: "14%" }}>{swap.loss}</div>
       <div style={{ width: "7%" }}>
