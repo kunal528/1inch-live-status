@@ -2,7 +2,6 @@
   padding: 0vh 8.33vh;
 }
 
-
 .table-wrapper {
   position: relative;
 }
@@ -40,7 +39,6 @@
   }
 }
 
-
 .table-row:first-child {
   animation-name: fadeIn;
   animation-duration: 1s;
@@ -65,34 +63,27 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-    border-radius: 10px;
-
+  background: #f1f1f1;
+  border-radius: 5vh;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #B3BFE2; 
-    border-radius: 10px;
-
+  background: #b3bfe2;
+  border-radius: 5vh;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #B3BFE2; 
-    border-radius: 10px;
-
+  background: #b3bfe2;
+  border-radius: 5vh;
 }
-
-
 
 .img {
   padding: 20px 0px;
   height: 6vh;
   width: 6vh;
 }
-
-
 
 .table-header {
   display: inline-flex;
@@ -165,4 +156,3 @@
   border-radius: 50%;
   box-shadow: 0px 0px 0.46vh #d5d8de;
 }
-

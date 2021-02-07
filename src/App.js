@@ -34,7 +34,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {loading ? "loading" : <Body swaps={data} state={ state}/>}
+      {loading ? (
+        <div className="loader" >Loading...</div>
+      ) : (
+        <Body swaps={data} state={state} />
+      )}
     </div>
   );
 }
