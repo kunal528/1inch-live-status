@@ -5,7 +5,10 @@ import TableRow from "./TableRow";
 const Table = ({ swaps,state }) => {
   return (
     <div className="table-wrapper">
-      <div className="table-scroll">
+      <div
+        className="table-scroll"
+        key={`table ${swaps.length}`}
+      >
         {/* <table key = {swaps.lenth>0?  swaps[0].tx_id:'table'}>
           <colgroup>
             <col style={{ width: "11%" }}></col>
@@ -20,10 +23,10 @@ const Table = ({ swaps,state }) => {
             <col style={{ width: "7%" }}></col>
           </colgroup>
           <tbody> */}
-            {swaps.map((swap) => (
-              <TableRow swap={swap} state={state} />
-            ))}
-          {/* </tbody> */}
+        {swaps.map((swap) => (
+          <TableRow swap={swap} state={state} />
+        ))}
+        {/* </tbody> */}
         {/* </table> */}
       </div>
     </div>

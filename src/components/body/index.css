@@ -7,7 +7,7 @@
   position: relative;
 }
 .table-scroll {
-  height: 69vh;
+  height: 68vh;
   overflow: auto;
 }
 .table-wrapper table {
@@ -32,8 +32,10 @@
 @keyframes fadeIn {
   from {
     max-height: 0vh;
+    opacity: 0;
   }
   to {
+    opacity: 1;
     max-height: 9.2vh;
   }
 }
