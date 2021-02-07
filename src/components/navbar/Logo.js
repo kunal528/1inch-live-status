@@ -5,7 +5,7 @@ const Logo = ({ imageUrl, logoText }) => {
     <>
       <img
         src={imageUrl}
-        className='img'
+        className='image'
         alt="1inch"
       />
       <p className="headerText">{logoText}</p>

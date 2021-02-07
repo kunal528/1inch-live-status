@@ -52,7 +52,6 @@
   display: flex;
   max-height: 9.2vh;
   height: auto;
-  margin: 1.84vh;
   font-size: 1.66vh;
   text-overflow: ellipsis;
   color: #b3bfe2;
@@ -60,14 +59,40 @@
   vertical-align: middle;
 }
 
-.table-row:hover {
-  filter: drop-shadow(0 0 1.84vh #d5d8de);
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-img {
-  height: 8vh;
-  width: 8vh;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+    border-radius: 10px;
+
 }
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B3BFE2; 
+    border-radius: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #B3BFE2; 
+    border-radius: 10px;
+
+}
+
+
+
+.img {
+  padding: 20px 0px;
+  height: 6vh;
+  width: 6vh;
+}
+
+
 
 .table-header {
   display: inline-flex;
@@ -120,7 +145,7 @@ img {
 .row {
   display: flex;
   align-items: center;
-  margin-top: 1vh;
+  padding-top: 1vh;
   height: 5vh;
 }
 

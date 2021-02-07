@@ -6,6 +6,7 @@ const Image = ({ imgUrl }) => {
     <img
       src={imageUrl}
       alt="Error"
+      className= "img"
       onError={() =>
         setImageUrl("https://etherscan.io/images/main/empty-token.png")
       }

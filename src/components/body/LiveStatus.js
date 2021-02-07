@@ -6,7 +6,7 @@ const LiveStatus = () => {
     <div className="row">
       <p
         className="recentTransactionText"
-        style={{ flex: 1, textAlign: "left" }}
+        style={{ flex: 0.7, textAlign: "left" }}
       >
         Recent Transactions{" "}
       </p>
