@@ -19,6 +19,12 @@ body {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
+  transition: color 1s;
+}
+
+.loader.darkMode{
+  color: white;
+  transition: color 1s;
 }
 @keyframes load4 {
   0%,

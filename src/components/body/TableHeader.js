@@ -2,7 +2,7 @@ import React from "react";
 
 const TableHeader = ({ isDarkMode }) => {
   return (
-    <div className={`table-header ${isDarkMode ? "darkMode" : "lightMode"}`}>
+    <div className={`table-header ${isDarkMode && "darkMode"}`}>
       <div style={{ width: "11%" }}>Txn Hash</div>
       <div style={{ width: "10%" }}>Block</div>
       <div style={{ width: "7%" }}>From</div>

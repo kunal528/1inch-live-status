@@ -4,9 +4,7 @@ import TwitterIcons from "./TwitterIcons";
 import Image from "./Image";
 import Tippy from "@tippyjs/react";
 import "./index.css";
-
-import "tippy.js/themes/light.css";
-import "tippy.js/themes/material.css";
+import "tippy.js/dist/tippy.css";
 const TableRow = ({ swap, isDarkMode }) => {
   const imgUrl =
     swap.dexName === "Uniswap"
@@ -15,17 +13,15 @@ const TableRow = ({ swap, isDarkMode }) => {
       ? "https://etherscan.io/images/defi/sushiswap.svg"
       : "https://etherscan.io/images/svg/brands/balancer.png";
   return (
-    <div className={`table-row ${isDarkMode ?"darkMode":"lightMode"}`}>
+    <div className={`table-row ${isDarkMode &&"darkMode"}`}>
       <Tippy
         content={<span>{swap.tx_id}</span>}
         maxWidth="none"
-        // arrow="none"
-        className={`tippy ${isDarkMode && 'darkMode'}`}
       >
         <div style={{ width: "11%" }}>
           <a
             href={`https://etherscan.io/tx/${swap.tx_id}`}
-            className={`href ${isDarkMode ?"darkMode":"lightMode"}`}
+            className={`href ${isDarkMode &&"darkMode"}`}
           >
             {swap.tx_id.substring(0, 14)}...
           </a>{" "}
@@ -35,7 +31,7 @@ const TableRow = ({ swap, isDarkMode }) => {
       <div style={{ width: "10%" }}>
         <a
           href={`https://etherscan.io/block/${swap.block}`}
-          className={`href ${isDarkMode ?"darkMode":"lightMode"}`}
+          className={`href ${isDarkMode &&"darkMode"}`}
         >
           {swap.block}
         </a>

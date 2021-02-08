@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-color: white;
+  transition: background 1s;
+}
+
+.App.darkMode {
+  background-color: #191f2b;
+  transition: background 1s;
 }
 
 .App-logo {

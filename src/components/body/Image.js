@@ -6,17 +6,16 @@ const Image = ({ imgUrl, token , isDarkMode }) => {
   return (
     <a
       href={`https://etherscan.io/address/${token}`}
-      className={`href ${isDarkMode ?   "darkMode"   :   "lightMode"}`}
+      className={`href ${isDarkMode &&   "darkMode"  }`}
     >
       <Tippy
         content={token}
         maxWidth="none"
-        className={`tippy ${isDarkMode ?   "darkMode"   :   "lightMode"}`}
       >
         <img
           src={imageUrl}
           alt="Error"
-          className={`img ${isDarkMode ?   "darkMode"   :   "lightMode"}`}
+          className={`img ${isDarkMode &&   "darkMode"   }`}
           onError={() =>
             setImageUrl("https://etherscan.io/images/main/empty-token.png")
           }

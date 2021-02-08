@@ -34,15 +34,15 @@ function App() {
     setLoading(false);
   }, []);
   return (
-    <div className="App">
+    <div className={`App ${isDarkMode && "darkMode"}`}>
       <NavBar
         isDarkMode={isDarkMode}
         onChange={() => setIsDarkMode((darkMode) => !darkMode)}
       />
       {loading ? (
-        <div className="loader">Loading...</div>
+        <div className={`loader ${isDarkMode && "darkMode"}`}>Loading...</div>
       ) : (
-          <Body swaps={data} isDarkMode={ isDarkMode}/>
+        <Body swaps={data} isDarkMode={isDarkMode} />
       )}
     </div>
   );

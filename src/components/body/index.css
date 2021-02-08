@@ -1,4 +1,4 @@
-.body.lightMode {
+.body {
   padding: 0vh 8.33vh;
   background-color: #f9fafd;
   transition: background 1s;
@@ -10,29 +10,8 @@
   transition: background 1s;
 }
 
-.tippy.lightMode {
-  background-color: #191f2b;
-  color: white;
-  padding: 0.3vh;
-  /* margin: 10px; */
-  /* position: absolute; */
-  /* left: -10; */
-  border-radius: 1vh;
-  font-size: 2vh;
-  transition: color 1s;
-}
 
-.tippy.darkMode {
-  background-image: linear-gradient(
-    90deg,
-    rgba(27, 77, 209, 1) 0%,
-    rgba(234, 0, 255, 1) 100%
-  );
-  box-shadow: 0 0 1vh white;
-  color: white;
-}
-
-.table-wrapper.lightMode {
+.table-wrapper {
   position: relative;
   background-color: white;
   transition: background 1s;
@@ -65,7 +44,7 @@
   animation-fill-mode: forwards;
 }
 
-.table-row.lightMode {
+.table-row {
   /* overflow: visible; */
   display: flex;
   /* max-height: 9.2vh; */
@@ -112,7 +91,7 @@
   border-radius: 5vh;
 }
 
-.href.lightMode {
+.href {
   text-decoration: none;
   font-size: 2vh;
   text-overflow: ellipsis;
@@ -126,7 +105,7 @@
   transition: color 1s;
 }
 
-.img.lightMode {
+.img {
   /* padding: 20px 0px; */
   height: 6vh;
   width: 6vh;
@@ -135,11 +114,11 @@
 }
 
 .img.darkMode {
-  box-shadow: 0vh 0vh 1.5vh white;
+  box-shadow: 0vh 0vh 1vh white;
   transition: box-shadow 1s;
 }
 
-.table-header.lightMode {
+.table-header {
   display: inline-flex;
   width: 100%;
   color: white;
@@ -177,7 +156,7 @@
   }
 }
 
-.liveIcon.lightMode {
+.liveIcon {
   margin: 0.92vh 0.92vh 0.92vh 0.95vh;
   width: 2.5vh;
   height: 2.5vh;
@@ -193,7 +172,7 @@
   transition: background 1s;
 }
 
-.liveText.lightMode {
+.liveText {
   font-size: 2.1vh;
   font-weight: bold;
   color: white;
@@ -221,7 +200,7 @@
   /* height: 5vh; */
 }
 
-.recentTransactionText.lightMode {
+.recentTransactionText {
   font-size: 2.5vh;
   font-weight: 600;
   color: #443c61;
@@ -244,14 +223,14 @@
   transition: color 1s;
 }
 
-.swapIcon.lightMode {
+.swapIcon {
   height: 3vh;
   width: 3vh;
   color: #443c61;
   transition: color 1s;
 }
 
-.circledSwapIcon.lightMode {
+.circledSwapIcon {
   fill: #443c61;
   transition: fill 1s;
 }

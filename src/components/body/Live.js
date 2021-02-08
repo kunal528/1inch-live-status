@@ -3,9 +3,9 @@ const Live = ({isDarkMode}) => {
   return (
     <div className="LiveStatus">
       <div
-        className={`liveIcon ${isDarkMode ? "darkMode" : "lightMode"}`}
+        className={`liveIcon ${isDarkMode &&"darkMode"}`}
       ></div>
-      <p className={`liveText ${isDarkMode ? "darkMode" : "lightMode"}`}>
+      <p className={`liveText ${isDarkMode &&"darkMode"}`}>
         Live
       </p>
     </div>

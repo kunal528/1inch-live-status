@@ -4,7 +4,7 @@ import TableRow from "./TableRow";
 
 const Table = ({ swaps, isDarkMode }) => {
   return (
-    <div className={`table-wrapper ${isDarkMode ? "darkMode" : "lightMode"}`}>
+    <div className={`table-wrapper ${isDarkMode && "darkMode"}`}>
       <div className="table-scroll" key={`table ${swaps.length}`}>
         {/* <table key={swaps.lenth > 0 ? swaps[0].tx_id : "table"}>
           <colgroup>
