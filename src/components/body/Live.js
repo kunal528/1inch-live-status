@@ -1,9 +1,9 @@
 import "./index.css";
-const Live = () => {
+const Live = ({isDarkMode}) => {
   return (
     <div className="LiveStatus">
-      <div class="liveIcon"></div>
-      <p style={{ fontSize: '2.1vh', fontWeight: "bold", color: "white" }}>Live</p>
+      <div className={`liveIcon ${isDarkMode && "darkMode"}`}></div>
+      <p className={`liveText ${isDarkMode && "darkMode"}`}>Live</p>
     </div>
   );
 };

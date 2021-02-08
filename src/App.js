@@ -42,7 +42,7 @@ function App() {
       {loading ? (
         <div className="loader">Loading...</div>
       ) : (
-        <Body swaps={data} />
+          <Body swaps={data} isDarkMode={ isDarkMode}/>
       )}
     </div>
   );

@@ -2,14 +2,11 @@ import "./index.css";
 import PropTypes from "prop-types";
 import TableRow from "./TableRow";
 
-const Table = ({ swaps,state }) => {
+const Table = ({ swaps, isDarkMode }) => {
   return (
-    <div className="table-wrapper">
-      <div
-        className="table-scroll"
-        key={`table ${swaps.length}`}
-      >
-        <table key = {swaps.lenth>0?  swaps[0].tx_id:'table'}>
+    <div className={`table-wrapper ${isDarkMode && "darkMode"}`}>
+      <div className="table-scroll" key={`table ${swaps.length}`}>
+        {/* <table key={swaps.lenth > 0 ? swaps[0].tx_id : "table"}>
           <colgroup>
             <col style={{ width: "11%" }}></col>
             <col style={{ width: "10%" }}></col>
@@ -22,12 +19,12 @@ const Table = ({ swaps,state }) => {
             <col style={{ width: "14%" }}></col>
             <col style={{ width: "7%" }}></col>
           </colgroup>
-          <tbody>
-        {swaps.map((swap) => (
-          <TableRow swap={swap} key={swap.tx_id} />
-        ))}
-        </tbody>
-        </table>
+          <tbody> */}
+            {swaps.map((swap) => (
+              <TableRow swap={swap} key={swap.tx_id} isDarkMode={isDarkMode} />
+            ))}
+          {/* </tbody>
+        </table> */}
       </div>
     </div>
   );

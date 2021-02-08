@@ -1,8 +1,8 @@
 import React from "react";
 
-const TableHeader = () => {
+const TableHeader = ({ isDarkMode }) => {
   return (
-    <div className="table-header">
+    <div className={`table-header ${isDarkMode && "darkMode"}`}>
       <div style={{ width: "11%" }}>Txn Hash</div>
       <div style={{ width: "10%" }}>Block</div>
       <div style={{ width: "7%" }}>From</div>
@@ -14,7 +14,6 @@ const TableHeader = () => {
       <div style={{ width: "14%" }}>Loss</div>
       <div style={{ width: "7%" }}></div>
     </div>
-
   );
 };
 

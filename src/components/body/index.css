@@ -1,24 +1,50 @@
 .body {
   padding: 0vh 8.33vh;
+  background-color: #f9fafd;
+  transition: background 1s;
+}
+
+.body.darkMode {
+  background: #191f2b;
+
+  transition: background 1s;
+}
+
+.tippy {
+  background-color: #191f2b;
+  color: white;
+  padding: 0.3vh;
+  /* margin: 10px; */
+  /* position: absolute; */
+  /* left: -10; */
+  border-radius: 1vh;
+  font-size: 2vh;
+  transition: color 1s;
+}
+
+.tippy.darkMode {
+  background-image: linear-gradient(
+    90deg,
+    rgba(27, 77, 209, 1) 0%,
+    rgba(234, 0, 255, 1) 100%
+  );
+  box-shadow: 0 0 1vh white;
+  color: white;
 }
 
 .table-wrapper {
   position: relative;
   background-color: white;
+  transition: background 1s;
+}
+
+.table-wrapper.darkMode {
+  background-color: #070b14;
+  transition: background 1s;
 }
 .table-scroll {
   height: 68vh;
   overflow: auto;
-}
-@keyframes add {
-  from {
-    opacity: 0;
-    transform: rotateY(0);
-  }
-  to {
-    opacity: 1;
-    transform: rotateY(1);
-  }
 }
 
 @keyframes fadeIn {
@@ -40,60 +66,28 @@
 }
 
 .table-row {
-  overflow: visible;
+  /* overflow: visible; */
   display: flex;
-  max-height: 9.2vh;
+  /* max-height: 9.2vh; */
   height: 9.2vh;
   font-size: 1.84vh;
   text-overflow: ellipsis;
   color: #b3bfe2;
   align-items: center;
   vertical-align: middle;
-  margin: 0.5vh 0vh;
+  border-spacing: 0;
+  margin-top: 0;
+  /* margin: 0.5vh 0vh; */
+  background-color: white;
+  transition: color 1s;
+  transition: background 1s;
 }
 
-table {
-  overflow: visible;
-}
-
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 10;
-  bottom: 150%;
-  left: 40%;
-  margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-.table-row:hover{
-  background-color: #f5f5f5;
+.table-row.darkMode {
+  color: white;
+  background-color: #070b14;
+  transition: color 1s;
+  transition: background 1s;
 }
 
 ::-webkit-scrollbar {
@@ -118,18 +112,31 @@ table {
   border-radius: 5vh;
 }
 
-a{
+.href {
   text-decoration: none;
   font-size: 2vh;
   text-overflow: ellipsis;
   color: #b3bfe2;
   padding: 2vh 0vh;
+  transition: color 1s;
+}
+
+.href.darkMode {
+  color: white;
+  transition: color 1s;
 }
 
 .img {
   /* padding: 20px 0px; */
   height: 6vh;
   width: 6vh;
+  border-radius: 50%;
+  transition: box-shadow 1s;
+}
+
+.img.darkMode {
+  box-shadow: 0vh 0vh 1.5vh white;
+  transition: box-shadow 1s;
 }
 
 .table-header {
@@ -144,6 +151,15 @@ a{
   background-color: #443c61;
   border-radius: 1.84vh 1.84vh 0vh 0vh;
   margin-top: 1.84vh;
+  transition: background 1s;
+  transition: color 1s;
+}
+
+.table-header.darkMode {
+  background-color: #77859d;
+  color: #191f2b;
+  transition: background 1s;
+  transition: color 1s;
 }
 
 @keyframes circle {
@@ -169,6 +185,24 @@ a{
   background-color: white;
   animation: circle 2s infinite;
   animation-direction: alternate;
+  transition: background 1s;
+}
+
+.liveIcon.darkMode {
+  background-color: #191f2b;
+  transition: background 1s;
+}
+
+.liveText {
+  font-size: 2.1vh;
+  font-weight: bold;
+  color: white;
+  transform: color 1s;
+}
+
+.liveText.darkMode {
+  color: #191f2b;
+  transition: color 1s;
 }
 .LiveStatus {
   display: flex;
@@ -184,7 +218,7 @@ a{
   display: flex;
   align-items: center;
   padding-top: 1vh;
-  height: 5vh;
+  /* height: 5vh; */
 }
 
 .recentTransactionText {
@@ -202,8 +236,35 @@ a{
   width: 5.55vh;
   border-radius: 50%;
   box-shadow: 0px 0px 0.5vh #d5d8de;
+  transition: color 1s;
 }
 
-.twitterButton:hover{
+.recentTransactionText.darkMode {
+  color: #7e95b8;
+  transition: color 1s;
+}
+
+.swapIcon {
+  height: 3vh;
+  width: 3vh;
+  color: #443c61;
+  transition: color 1s;
+}
+
+.circledSwapIcon {
+  fill: #443c61;
+  transition: fill 1s;
+}
+.circledSwapIcon.darkMode {
+  fill: white;
+  transition: fill 1s;
+}
+
+.swapIcon.darkMode {
+  color: #7e95b8;
+  transition: color 1s;
+}
+
+.twitterButton:hover {
   box-shadow: 0px 0px 2vh #1e96f8;
 }
