@@ -114,7 +114,7 @@
 }
 
 .img.darkMode {
-  box-shadow: 0vh 0vh 1vh white;
+  box-shadow: 0vh 0vh 1px white;
   transition: box-shadow 1s;
 }
 
