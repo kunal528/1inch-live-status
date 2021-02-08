@@ -9,7 +9,7 @@ const Table = ({ swaps,state }) => {
         className="table-scroll"
         key={`table ${swaps.length}`}
       >
-        {/* <table key = {swaps.lenth>0?  swaps[0].tx_id:'table'}>
+        <table key = {swaps.lenth>0?  swaps[0].tx_id:'table'}>
           <colgroup>
             <col style={{ width: "11%" }}></col>
             <col style={{ width: "10%" }}></col>
@@ -22,12 +22,12 @@ const Table = ({ swaps,state }) => {
             <col style={{ width: "14%" }}></col>
             <col style={{ width: "7%" }}></col>
           </colgroup>
-          <tbody> */}
+          <tbody>
         {swaps.map((swap) => (
           <TableRow swap={swap} key={swap.tx_id} />
         ))}
-        {/* </tbody> */}
-        {/* </table> */}
+        </tbody>
+        </table>
       </div>
     </div>
   );

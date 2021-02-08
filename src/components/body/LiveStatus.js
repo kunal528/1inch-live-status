@@ -1,6 +1,7 @@
-import SwapIcons from "./SwapIcons";
 import "./index.css";
 import Live from "./Live";
+import { FaExchangeAlt } from 'react-icons/fa'
+
 const LiveStatus = () => {
   return (
     <div className="row">
@@ -10,8 +11,8 @@ const LiveStatus = () => {
       >
         Recent Transactions{" "}
       </p>
-      <SwapIcons isCircle={false} />
-      <div style={{ flex: 4 ,}}></div>
+      <FaExchangeAlt style={{ height: '3vh', width:'3vh' }}/>
+      <div style={{ flex: 4 }}></div>
       <Live />
     </div>
   );

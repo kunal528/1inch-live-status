@@ -14,6 +14,7 @@ const TableHeader = () => {
       <div style={{ width: "14%" }}>Loss</div>
       <div style={{ width: "7%" }}></div>
     </div>
+
   );
 };
 

@@ -14,7 +14,7 @@ function App() {
         .from("latest_swaps")
         .select()
         .order("block", { ascending: false })
-        // .limit(10);
+        .limit(10);
       if (error) {
         alert(error.message);
         return;
