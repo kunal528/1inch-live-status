@@ -1,4 +1,4 @@
-.body {
+.body.lightMode {
   padding: 0vh 8.33vh;
   background-color: #f9fafd;
   transition: background 1s;
@@ -10,7 +10,7 @@
   transition: background 1s;
 }
 
-.tippy {
+.tippy.lightMode {
   background-color: #191f2b;
   color: white;
   padding: 0.3vh;
@@ -32,7 +32,7 @@
   color: white;
 }
 
-.table-wrapper {
+.table-wrapper.lightMode {
   position: relative;
   background-color: white;
   transition: background 1s;
@@ -65,7 +65,7 @@
   animation-fill-mode: forwards;
 }
 
-.table-row {
+.table-row.lightMode {
   /* overflow: visible; */
   display: flex;
   /* max-height: 9.2vh; */
@@ -112,7 +112,7 @@
   border-radius: 5vh;
 }
 
-.href {
+.href.lightMode {
   text-decoration: none;
   font-size: 2vh;
   text-overflow: ellipsis;
@@ -126,7 +126,7 @@
   transition: color 1s;
 }
 
-.img {
+.img.lightMode {
   /* padding: 20px 0px; */
   height: 6vh;
   width: 6vh;
@@ -139,7 +139,7 @@
   transition: box-shadow 1s;
 }
 
-.table-header {
+.table-header.lightMode {
   display: inline-flex;
   width: 100%;
   color: white;
@@ -177,7 +177,7 @@
   }
 }
 
-.liveIcon {
+.liveIcon.lightMode {
   margin: 0.92vh 0.92vh 0.92vh 0.95vh;
   width: 2.5vh;
   height: 2.5vh;
@@ -193,7 +193,7 @@
   transition: background 1s;
 }
 
-.liveText {
+.liveText.lightMode {
   font-size: 2.1vh;
   font-weight: bold;
   color: white;
@@ -221,7 +221,7 @@
   /* height: 5vh; */
 }
 
-.recentTransactionText {
+.recentTransactionText.lightMode {
   font-size: 2.5vh;
   font-weight: 600;
   color: #443c61;
@@ -244,14 +244,14 @@
   transition: color 1s;
 }
 
-.swapIcon {
+.swapIcon.lightMode {
   height: 3vh;
   width: 3vh;
   color: #443c61;
   transition: color 1s;
 }
 
-.circledSwapIcon {
+.circledSwapIcon.lightMode {
   fill: #443c61;
   transition: fill 1s;
 }

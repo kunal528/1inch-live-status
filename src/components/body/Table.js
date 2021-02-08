@@ -4,7 +4,7 @@ import TableRow from "./TableRow";
 
 const Table = ({ swaps, isDarkMode }) => {
   return (
-    <div className={`table-wrapper ${isDarkMode && "darkMode"}`}>
+    <div className={`table-wrapper ${isDarkMode ? "darkMode" : "lightMode"}`}>
       <div className="table-scroll" key={`table ${swaps.length}`}>
         {/* <table key={swaps.lenth > 0 ? swaps[0].tx_id : "table"}>
           <colgroup>
@@ -20,10 +20,10 @@ const Table = ({ swaps, isDarkMode }) => {
             <col style={{ width: "7%" }}></col>
           </colgroup>
           <tbody> */}
-            {swaps.map((swap) => (
-              <TableRow swap={swap} key={swap.tx_id} isDarkMode={isDarkMode} />
-            ))}
-          {/* </tbody>
+        {swaps.map((swap) => (
+          <TableRow swap={swap} key={swap.tx_id} isDarkMode={isDarkMode} />
+        ))}
+        {/* </tbody>
         </table> */}
       </div>
     </div>

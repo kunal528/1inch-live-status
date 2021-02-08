@@ -15,7 +15,7 @@ const TableRow = ({ swap, isDarkMode }) => {
       ? "https://etherscan.io/images/defi/sushiswap.svg"
       : "https://etherscan.io/images/svg/brands/balancer.png";
   return (
-    <div className={`table-row ${isDarkMode && "darkMode"}`}>
+    <div className={`table-row ${isDarkMode ?"darkMode":"lightMode"}`}>
       <Tippy
         content={<span>{swap.tx_id}</span>}
         maxWidth="none"
@@ -25,7 +25,7 @@ const TableRow = ({ swap, isDarkMode }) => {
         <div style={{ width: "11%" }}>
           <a
             href={`https://etherscan.io/tx/${swap.tx_id}`}
-            className={`href ${isDarkMode && "darkMode"}`}
+            className={`href ${isDarkMode ?"darkMode":"lightMode"}`}
           >
             {swap.tx_id.substring(0, 14)}...
           </a>{" "}
@@ -35,7 +35,7 @@ const TableRow = ({ swap, isDarkMode }) => {
       <div style={{ width: "10%" }}>
         <a
           href={`https://etherscan.io/block/${swap.block}`}
-          className={`href ${isDarkMode && "darkMode"}`}
+          className={`href ${isDarkMode ?"darkMode":"lightMode"}`}
         >
           {swap.block}
         </a>
