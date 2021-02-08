@@ -8,6 +8,12 @@
   background-color: #edf3ff;
   height: 15vh;
   box-shadow: inset;
+  transition: background 1s;
+}
+
+.header.darkMode{
+  background: #070B14;
+  transition: background 1s;
 }
 
 .logo {
@@ -16,6 +22,8 @@
   align-items: center;
   background-color: #edf3ff;
 }
+
+
 
 .btn {
   display: inline-block;
@@ -37,10 +45,17 @@
   transform: scale(0.98);
 }
 
-.image {
+.imageLogo {
   height: 15vh;
   width: 15vh;
 }
+
+.imageLogo.darkMode{
+  filter: drop-shadow(0 0 2vh #FF0101);
+  border-radius: 50%;
+  transition: filter 1s;
+}
+
 
 .btn-block {
   display: block;
@@ -55,4 +70,10 @@
   /* align-self: start; */
   text-align: start;
   color: black;
+  transition: color 1s;
+}
+
+.headerText.darkMode{
+  color: white;
+  transition: color 1s;
 }

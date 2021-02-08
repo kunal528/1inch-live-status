@@ -8,6 +8,7 @@ import Body from "./components/body/Body";
 function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
   useEffect(() => {
     const fetchData = async () => {
       let { error, data } = await supabaseClient
@@ -34,7 +35,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <NavBar />
+      <NavBar
+        isDarkMode={isDarkMode}
+        onChange={() => setIsDarkMode((darkMode) => !darkMode)}
+      />
       {loading ? (
         <div className="loader">Loading...</div>
       ) : (
