@@ -44,7 +44,7 @@
   display: flex;
   max-height: 9.2vh;
   height: 9.2vh;
-  font-size: 2vh;
+  font-size: 1.84vh;
   text-overflow: ellipsis;
   color: #b3bfe2;
   align-items: center;
@@ -201,5 +201,9 @@ a{
   display: flex;
   width: 5.55vh;
   border-radius: 50%;
-  box-shadow: 0px 0px 0.46vh #d5d8de;
+  box-shadow: 0px 0px 0.5vh #d5d8de;
+}
+
+.twitterButton:hover{
+  box-shadow: 0px 0px 2vh #1e96f8;
 }
