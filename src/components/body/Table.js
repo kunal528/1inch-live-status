@@ -24,7 +24,7 @@ const Table = ({ swaps,state }) => {
           </colgroup>
           <tbody> */}
         {swaps.map((swap) => (
-          <TableRow swap={swap} state={state} key={swap.tx_id} />
+          <TableRow swap={swap} key={swap.tx_id} />
         ))}
         {/* </tbody> */}
         {/* </table> */}

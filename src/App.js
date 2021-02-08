@@ -4,29 +4,30 @@ import { supabaseClient } from "./supabase_client.js";
 import { useState, useEffect } from "react";
 import NavBar from "./components/navbar/NavBar";
 import Body from "./components/body/Body";
+
 function App() {
-  let subscription = null;
-  const [state, setState] = useState("");
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       let { error, data } = await supabaseClient
         .from("latest_swaps")
-        .select().order('block',{ascending:false}).limit(10);
+        .select()
+        .order("block", { ascending: false })
+        // .limit(10);
       if (error) {
-        console.log(error.message);
+        alert(error.message);
         return;
       }
-      setData(data)
+      setData(data);
     };
     fetchData();
-    subscription = supabaseClient
+    supabaseClient
       .from("latest_swaps")
       .on("INSERT", (v) => {
-        console.log(data)
-        console.log(v.new)
-        setData((d)=>[v.new,...d])
+        console.log(data);
+        console.log(v.new);
+        setData((d) => [v.new, ...d]);
       })
       .subscribe();
     setLoading(false);
@@ -35,9 +36,9 @@ function App() {
     <div className="App">
       <NavBar />
       {loading ? (
-        <div className="loader" >Loading...</div>
+        <div className="loader">Loading...</div>
       ) : (
-        <Body swaps={data} state={state} />
+        <Body swaps={data} />
       )}
     </div>
   );

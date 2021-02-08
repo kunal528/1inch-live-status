@@ -4,6 +4,7 @@
 
 .table-wrapper {
   position: relative;
+  background-color: white;
 }
 .table-scroll {
   height: 68vh;
@@ -55,6 +56,7 @@
   color: #b3bfe2;
   align-items: center;
   vertical-align: middle;
+  margin: 0.5vh 0vh;
 }
 
 ::-webkit-scrollbar {

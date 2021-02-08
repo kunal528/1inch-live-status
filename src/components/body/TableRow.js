@@ -2,7 +2,7 @@ import React from "react";
 import SwapIcons from "./SwapIcons";
 import TwitterIcons from "./TwitterIcons";
 import Image from "./Image";
-const TableRow = ({ swap, state }) => {
+const TableRow = ({ swap, }) => {
 
   const imgUrl =
     swap.dexName === "Uniswap"

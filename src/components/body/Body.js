@@ -7,7 +7,7 @@ const Body = ({ swaps,state }) => {
     <div className="body" style={{backgroundColor: '#F9FAFD'}}>
       <LiveStatus />
       <TableHeader />
-      <Table swaps={swaps} state={state} />
+      <Table swaps={swaps}/>
     </div>
   );
 };
