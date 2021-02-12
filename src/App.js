@@ -33,11 +33,15 @@ function App() {
       .subscribe();
     setLoading(false);
   }, []);
+
+  const toggleDarkMode = (checked) => {
+    setIsDarkMode(checked);
+  };
   return (
     <div className={`App ${isDarkMode && "darkMode"}`}>
       <NavBar
         isDarkMode={isDarkMode}
-        onChange={() => setIsDarkMode((darkMode) => !darkMode)}
+        onChange={toggleDarkMode}
       />
       {loading ? (
         <div className={`loader ${isDarkMode && "darkMode"}`}>Loading...</div>

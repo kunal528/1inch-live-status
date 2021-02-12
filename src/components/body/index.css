@@ -10,7 +10,6 @@
   transition: background 1s;
 }
 
-
 .table-wrapper {
   position: relative;
   background-color: white;
@@ -22,7 +21,7 @@
   transition: background 1s;
 }
 .table-scroll {
-  height: 68vh;
+  height: 69vh;
   overflow: auto;
 }
 
@@ -69,27 +68,7 @@
   transition: background 1s;
 }
 
-::-webkit-scrollbar {
-  width: 0.5vw;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 5vh;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #b3bfe2;
-  border-radius: 5vh;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b3bfe2;
-  border-radius: 5vh;
-}
 
 .href {
   text-decoration: none;

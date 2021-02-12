@@ -22,6 +22,30 @@ body {
   transition: color 1s;
 }
 
+::-webkit-scrollbar {
+  width: 0.6vw;
+  border: 1px #3d3d3d;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+  border-radius: 0px  0px 10px 0px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b6b6b;
+  border-radius: 5vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6b6b6b;
+  border-radius: 5vh;
+}
+
 .loader.darkMode{
   color: white;
   transition: color 1s;
