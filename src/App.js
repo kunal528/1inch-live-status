@@ -14,6 +14,7 @@ function App() {
       let { error, data } = await supabaseClient
         .from("latest_swaps")
         .select()
+        .not("tweetUrl", "eq", "https://twitter.com/1inchSwapBot")
         .order("block", { ascending: false })
         .limit(10);
       if (error) {
@@ -34,14 +35,11 @@ function App() {
     setLoading(false);
   }, []);
 
-  const toggleDarkMode = (checked) => {
-    setIsDarkMode(checked);
-  };
   return (
     <div className={`App ${isDarkMode && "darkMode"}`}>
       <NavBar
         isDarkMode={isDarkMode}
-        onChange={toggleDarkMode}
+        onChange={setIsDarkMode}
       />
       {loading ? (
         <div className={`loader ${isDarkMode && "darkMode"}`}>Loading...</div>
